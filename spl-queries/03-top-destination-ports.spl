@@ -1,0 +1,4 @@
+vendor_product="Fortinet Firewall"
+| stats count AS total_events BY dstport
+| sort - total_events
+| head 10
