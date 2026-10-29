@@ -1,0 +1,5 @@
+vendor_product="Fortinet Firewall"
+| eval service_name=if(isnull(service) OR service="", "Unknown", service)
+| stats count AS total_events BY service_name
+| sort - total_events
+| head 10
