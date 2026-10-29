@@ -1,0 +1,4 @@
+vendor_product="Fortinet Firewall" action="blocked"
+| stats count AS blocked_events BY srcip
+| sort - blocked_events
+| head 10
