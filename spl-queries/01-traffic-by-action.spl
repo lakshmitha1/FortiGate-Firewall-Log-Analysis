@@ -1,0 +1,4 @@
+vendor_product="Fortinet Firewall"
+| eval action_status=if(isnull(action) OR action="", "Missing action", action)
+| stats count AS total_events BY action_status
+| sort - total_events
