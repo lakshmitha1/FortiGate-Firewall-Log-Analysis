@@ -314,7 +314,7 @@ Service analysis helps an analyst understand the services associated with record
 
 ## 7. Dashboard Configuration
 
-**Dashboard Name:** Fortinet Firewall dashboard
+**Dashboard Name:** Fortinet Firewall Dashboard
 
 The dashboard contains the following seven panels:
 
